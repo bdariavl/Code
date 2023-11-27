@@ -1,0 +1,57 @@
+body {
+  background: lightgray;
+}
+
+sup {
+  color: red;
+}
+
+.bold {
+  /* Жирність тексту */
+  font-weight: 800;
+  color: violet;
+}
+
+.cursive {
+  /* Тип тексту(курсив) */
+  font-style: italic;
+  color: lightsalmon;
+}
+
+
+.dotted {
+  text-decoration: dotted;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.waved {
+  text-decoration: wavy;
+}
+.sup {
+  margin-bottom: 10px;
+}
+
+sub {
+  margin-top: 10px;
+}
+
+/* _______________________ */
+
+.wrapper p {
+  color: blue;
+}
+
+.wrapper p span {
+  color: rgb(77, 226, 161);
+}
+
+p {
+  color: darkmagenta;
+}
+
+.custom, .underline {
+  color: rgb(33, 91, 91);
+}
