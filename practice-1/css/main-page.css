@@ -1,0 +1,147 @@
+
+.client-section {
+  width: 100%;
+}
+
+.client-section p {
+  color: #fff;
+  text-align: center;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 31px;
+}
+
+.client-section .clients-wrapper {
+  width: 100%;
+  display: grid;
+  gap: 60px;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 175px));
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.box-wrapper {
+  gap: 28px;
+  margin-top: 180px;
+}
+
+.box-wrapper .box .box-name {
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 26px 0 17px 0;
+}
+
+.box-wrapper .box p {
+  color: #b4bcd0;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: 26px;
+}
+
+.why-prismatic-section {
+  margin-top: 180px;
+  gap: 15px;
+}
+
+.why-prismatic-section img {
+  margin: 40px;
+}
+.intelligent-section {
+  gap: 15px;
+}
+
+.intelligent-card-section {
+  flex-wrap: wrap;
+  gap: 28px;
+  margin-top: 40px;
+  margin-bottom: 130px;
+}
+
+.intelligent-card-section div {
+  padding: 20px;
+  align-items: flex-start;
+  margin: 0;
+}
+.intelligent-card-section div img {
+  width: 44px;
+  height: 44px;
+  margin-bottom: 24px;
+}
+.intelligent-card-section div h4 {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 20px;
+}
+
+.intelligent-card-section div p {
+  color: #b4bcd0;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.dimensional-section,
+.self-service-section {
+  gap: 28px;
+  width: 100%;
+}
+
+
+.dimensional-section .dimentional button,
+.self-service-section .dimentional button {
+  margin-top: 40px;
+}
+
+.self-service-section {
+  margin: 160px auto 120px auto;
+}
+
+.about-us-section .about-us-information {
+  gap: 28px;
+}
+
+.about-us-section .about-us-information .about-us-block {
+  margin-top: 60px;
+  margin-bottom: 100px;
+  gap: 65px;
+  width: 416px;
+  height: 138px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid #373737;
+  
+}
+
+.about-us-section .about-us-information .about-us-block span {
+  color: #fff;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 28px;
+  letter-spacing: -0.45px;
+  
+}
+
+.about-us-section .about-us-information .about-us-block p {
+  color: #b4bcd0;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.image-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
