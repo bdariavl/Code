@@ -42,7 +42,7 @@ footer .hr {
 footer .footer-content {
   width: 80%;
   display: grid;
-  grid-template-columns: repeat(3, 280px);
+  grid-template-columns: repeat(auto-fit, 280px);
   gap: 30px;
   margin-top: 50px;
 }

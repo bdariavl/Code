@@ -2,6 +2,73 @@
   width: 100%;
 }
 
+@media (max-width: 400px) {
+  body {
+    width: 100%;
+  }
+
+  header img {
+    width: 138px;
+    height: 36px;
+    margin: 14px auto 14px 0;
+  }
+
+  header nav,
+  header .buttons-wrapper {
+    visibility: hidden;
+  }
+
+  .title-section h1 {
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 54px;
+  }
+
+  .cards-section .card {
+    width: 330px !important;
+    height: auto !important;
+    margin: 20px ;
+  }
+
+  header,
+  .footer-head,
+  .title-section,
+  .cards-section,
+  footer .footer-head,
+  footer .footer-head .form,
+  footer .footer-thumb .wrapper {
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+  }
+
+  footer .footer-thumb {
+    flex-direction: column;
+  }
+
+  footer .footer-head .footer-title {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  footer .footer-head .form input {
+    width: calc(100% - 40px) !important;
+  }
+
+  footer .footer-head .form button {
+    width: 100% !important;
+  }
+
+  footer .big-logo-wrapper {
+    width: 100% !important;
+  }
+
+  footer .big-logo {
+    width: 335px !important;
+    margin: 0;
+  }
+}
+
 .title-section h1 {
   margin-bottom: 16px;
 }
@@ -97,7 +164,7 @@
   margin-right: 13px;
 }
 
-.cards-section .card .p-wrapper{
+.cards-section .card .p-wrapper {
   gap: 10px;
 }
 
