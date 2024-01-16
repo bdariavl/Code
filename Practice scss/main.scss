@@ -73,11 +73,164 @@ h6 {
     }
 
     .images-wrapper {
+      display: flex;
+      width: 100%;
+      gap: 36px;
+      justify-content: flex-end;
+      transform: translateX(9vw);
+    }
+  }
+}
+
+.steps-section {
+  width: 100%;
+  background: rules.$darkblue;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .steps-content {
+    width: 80%;
+    // display: grid;
+    // grid-template-columns: repeat(2, 1fr);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  img {
+    width: 789px;
+    height: 304px;
+    border-radius: 50px;
+  }
+
+  .steps {
+    width: 460px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 23px;
+
+    h4 {
+      color: #fff;
+      font-family: Noto Sans;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 32px;
+
+      .lightblue {
+        color: rules.$lightblue;
+      }
+    }
+
+    hr {
+      width: 96px;
+      height: 8px;
+      background: #fff;
+      margin: 0;
+    }
+
+    .steps-number {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      span {
+        color: #fff;
+        font-family: Noto Sans;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 32px;
+      }
+
+      p {
+        margin: 0;
+        color: #fff;
+        font-family: Noto Sans;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 200;
+        line-height: 32px;
+      }
+    }
+  }
+}
+
+.reviews-section {
+  width: 100%;
+  background: rules.$darkblue;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .reviews-content {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+  margin-top: 86px;
+
+
+    .review {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 28px;
+      padding: 10px 20px;
+
+      background: rules.$blue-gradient;
+      width: 400px;
+      height: 250px;
+      border-radius: 50px;
+      border: 1px solid #000;
+
+      .name {
         display: flex;
-        width: 100%;
-        gap: 36px;
-        justify-content: flex-end;
-        transform: translateX(10vw);
+        align-items: center;
+        gap: 13px;
+
+        .name-wrapper {
+          display: flex;
+          flex-direction: column;
+          gap: 4px;
+          span {
+            color: #fff;
+            font-family: Noto Sans;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.6px;
+          }
+
+          p {
+            margin: 0;
+            color: #fff;
+            font-family: Noto Sans;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.39px;
+          }
+        }
+      }
+
+      p {
+        margin: 0;
+        color: #fff;
+        font-family: Noto Sans;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.6px;
+      }
     }
   }
 }

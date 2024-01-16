@@ -47,7 +47,7 @@ h6 {
   line-height: normal;
 }
 .hero-section .section-content article h1 .lightblue {
-  color: #48CBD3;
+  color: #48cbd3;
 }
 .hero-section .section-content article p {
   width: 70%;
@@ -82,5 +82,136 @@ h6 {
   width: 100%;
   gap: 36px;
   justify-content: flex-end;
-  transform: translateX(10vw);
+  transform: translateX(9vw);
+}
+
+.steps-section {
+  width: 100%;
+  background: #010625;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.steps-section .steps-content {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.steps-section img {
+  width: 789px;
+  height: 304px;
+  border-radius: 50px;
+}
+.steps-section .steps {
+  width: 460px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 23px;
+}
+.steps-section .steps h4 {
+  color: #fff;
+  font-family: Noto Sans;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+.steps-section .steps h4 .lightblue {
+  color: #48cbd3;
+}
+.steps-section .steps hr {
+  width: 96px;
+  height: 8px;
+  background: #fff;
+  margin: 0;
+}
+.steps-section .steps .steps-number {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.steps-section .steps .steps-number span {
+  color: #fff;
+  font-family: Noto Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 32px;
+}
+.steps-section .steps .steps-number p {
+  margin: 0;
+  color: #fff;
+  font-family: Noto Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 32px;
+}
+
+.reviews-section {
+  width: 100%;
+  background: #010625;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.reviews-section .reviews-content {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 86px;
+}
+.reviews-section .reviews-content .review {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 28px;
+  padding: 10px 20px;
+  background: linear-gradient(245deg, #48cbd3 -14.3%, rgba(118, 59, 194, 0) 103.82%);
+  width: 400px;
+  height: 250px;
+  border-radius: 50px;
+  border: 1px solid #000;
+}
+.reviews-section .reviews-content .review .name {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+.reviews-section .reviews-content .review .name .name-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.reviews-section .reviews-content .review .name .name-wrapper span {
+  color: #fff;
+  font-family: Noto Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.6px;
+}
+.reviews-section .reviews-content .review .name .name-wrapper p {
+  margin: 0;
+  color: #fff;
+  font-family: Noto Sans;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.39px;
+}
+.reviews-section .reviews-content .review p {
+  margin: 0;
+  color: #fff;
+  font-family: Noto Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.6px;
 }
