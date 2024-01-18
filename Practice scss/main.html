@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="footer.css">
   </head>
   <body>
     <header>
@@ -53,8 +54,9 @@
 
       <section class="steps-section">
         <div class="steps-content">
-          <img src="./assets/bg-3.svg" alt="bg-3" />
-
+          <div class="image-wrapper">
+            <img src="./assets/bg-3.svg" alt="bg-3" />
+          </div>
           <article class="steps">
             <h4>
               There are only <span class="lightblue">3 steps to start</span>
@@ -133,7 +135,60 @@
           </div>
         </div>
       </section>
+
+      <section class="business-section">
+        <div class="business-content">
+          <div class="search-section">
+            <h2>
+              Take a look on the <br />
+              built business pages
+            </h2>
+            <div class="input-wrapper">
+              <input
+                type="text"
+                placeholder="Promp (Coffe, Barber, Coach, ect.)"
+              />
+              <button>Search</button>
+            </div>
+          </div>
+
+          <img src="./assets/Mobile Device.svg" alt="Mobile Device" />
+        </div>
+      </section>
+
+      <marquee class="text-marquee" direction="right">
+        <h3>
+          What will I reach? Is it paid? Can I have a multiple accounts? Why
+          should I use it?
+        </h3>
+      </marquee>
+
+      <section class="contact-section">
+        <div class="contact-content">
+          <div class="form-wrapper">
+            <div class="input-wrapper">
+              <input type="email" placeholder="Email" />
+              <textarea class="input" placeholder="Your message"></textarea>
+            </div>
+            <button>Send the form</button>
+          </div>
+
+          <h2>Have a questions? <br />Ask us directly!</h2>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="footer-content">
+        <h2>Logo</h2>
+        <div class="links-wrapper">
+          <a href="">About</a>
+          <a href="./login.html">Sign in</a>
+          <a href="">Contact us</a>
+          <a href="./signup.html">Sign Up</a>
+          <a href="">Help</a>
+          <a href="">Blog</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
