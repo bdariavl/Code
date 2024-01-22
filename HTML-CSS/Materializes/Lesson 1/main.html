@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <h1>Hello Materialize!</h1>
+
+    <div class="forms-wrapper">
+      <h2>Forms</h2>
+      <input id="email" type="text" placeholder="Enter the email" />
+      <label for="email">Enter the email</label>
+
+      <input disabled id="name" type="text" placeholder="Enter the name" />
+      <label for="name">Onfy first name</label>
+
+      <div class="input-field">
+        <i class="material-icons prefix">account_circle</i>
+        <input
+          id="second-name"
+          type="text"
+          placeholder="Enter the second name"
+          class="validate"
+        />
+        <label for="second-name">Enter the second name</label>
+      </div>
+
+      <div class="input-field">
+        <i class="material-icons prefix">child_care</i>
+        <input
+          id="second-name"
+          type="text"
+          placeholder="Enter the second name"
+          class="validate"
+        />
+        <label for="second-name">Enter the second name</label>
+      </div>
+
+      <div class="input-field message">
+        <i class="material-icons prefix">insert_emoticon</i>
+        <textarea
+          id="message"
+          class="materialize-textarea"
+          data-length="30"
+        ></textarea>
+        <label for="message">Enter your message</label>
+      </div>
+
+      <div class="switch">
+        <label>
+          Disable
+          <i class="material-icons">mode_edit</i>
+          <input type="checkbox" />
+          <span class="lever"></span>
+          Enable
+        </label>
+      </div>
+
+      <div class="input-field">
+        <select>
+          <option value="" selected>Selected option</option>
+          <option value="value-1">Option 1</option>
+          <option value="value-2">Option 2</option>
+        </select>
+        <label>Select the element</label>
+      </div>
+
+      <div class="input-field">
+        <select multiple>
+          <option value="" selected>Selected option</option>
+          <option value="value-1">Option 1</option>
+          <option value="value-2">Option 2</option>
+        </select>
+        <label>Select the element</label>
+      </div>
+
+      <div class="input-field">
+        <select class="icons">
+          <option value="" selected disabled>Select cat</option>
+          <option
+            value=""
+            data-icon="https://cdn.fishki.net/upload/post/2021/01/26/3573021/tn/maxresdefault-1.jpg"
+          >
+            Funny
+          </option>
+          <option
+            value=""
+            data-icon="https://i.pinimg.com/736x/5a/a6/15/5aa6158f879cb9418fc56ca3749eb654.jpg"
+          >
+            Curios
+          </option>
+          <option
+            value=""
+            data-icon="https://images.techinsider.ru/upload/img_cache/ff7/ff76775fd52c9ba2edabf9f26b466411_cropped_666x500.jpg"
+          >
+            Atractive
+          </option>
+        </select>
+      </div>
+
+      <p class="range-field">
+        <input type="range" step="0.1" min="0" max="5" />
+      </p>
+
+      <p>
+        <label>
+          <input name="group" type="radio" />
+          <span>Option 1</span>
+        </label>
+      </p>
+      <p>
+        <label>
+          <input name="group" class="with-gap" type="radio" />
+          <span>Option 2</span>
+        </label>
+      </p>
+      <p>
+        <label>
+          <input name="group" type="radio" disabled />
+          <span>Option 3 (disable)</span>
+        </label>
+      </p>
+      <div class="input-field">
+        <input
+          id="date"
+          type="text"
+          placeholder="Select the date"
+          class="datepicker"
+        />
+        <label for="date">Enter the date</label>
+      </div>
+
+      <div class="input-field">
+        <input
+          id="time"
+          type="text"
+          placeholder="Select the time"
+          class="timepicker"
+        />
+        <label for="time">Enter the date</label>
+
+        <div class="chip">
+          <span>Text</span>
+          <i class="material-icons close">close</i>
+        </div>
+        <div class="chip">
+          <span>Text</span>
+          <i class="material-icons close">close</i>
+        </div>
+        <div class="chip">
+          <img
+            src="https://images.techinsider.ru/upload/img_cache/ff7/ff76775fd52c9ba2edabf9f26b466411_cropped_666x500.jpg"
+            alt=""
+          />
+          <span>Text</span>
+          <i class="material-icons close">close</i>
+        </div>
+        <div class="chip">
+          <img
+            src="https://images.techinsider.ru/upload/img_cache/ff7/ff76775fd52c9ba2edabf9f26b466411_cropped_666x500.jpg"
+            alt=""
+          />
+          <span>Text</span>
+          <i class="material-icons close">close</i>
+        </div>
+      </div>
+
+      <p>
+        <label>
+          <input type="checkbox" />
+          <span>Some offer</span>
+        </label>
+      </p>
+
+      <p>
+        <label>
+          <input type="checkbox" class="filled-in" />
+          <span>Some offer</span>
+        </label>
+      </p>
+
+      <p>
+        <label>
+          <input type="checkbox" id="indeterminate-checkbox" />
+          <span>Some offer</span>
+        </label>
+      </p>
+      <div class="input-field">
+        <input
+          type="text"
+          id="autocomplete-input"
+          class="autocomplete"
+          placeholder="Enter your name"
+        />
+      </div>
+      <h2>Text flow-text</h2>
+      <p class="flow-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, fugiat
+        cumque temporibus et eveniet non. Distinctio quidem dolorum officiis
+        illo in beatae dolorem alias delectus. Omnis repellendus ipsa mollitia
+        incidunt.
+      </p>
+
+      <h2>Tables</h2>
+
+      <p>Default</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Daryna</td>
+            <td>22</td>
+          </tr>
+          <tr>
+            <td>Alyna</td>
+            <td>42</td>
+          </tr>
+          <tr>
+            <td>Karyna</td>
+            <td>29</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>Striped</p>
+      <table class="striped">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Daryna</td>
+            <td>22</td>
+          </tr>
+          <tr>
+            <td>Alyna</td>
+            <td>42</td>
+          </tr>
+          <tr>
+            <td>Karyna</td>
+            <td>29</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>Highlight (centered)</p>
+      <table class="centered highlight">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Daryna</td>
+            <td>22</td>
+          </tr>
+          <tr>
+            <td>Alyna</td>
+            <td>42</td>
+          </tr>
+          <tr>
+            <td>Karyna</td>
+            <td>29</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>Responsive table</p>
+      <table class="responsive-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Daryna</td>
+            <td>22</td>
+          </tr>
+          <tr>
+            <td>Alyna</td>
+            <td>42</td>
+          </tr>
+          <tr>
+            <td>Karyna</td>
+            <td>29</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Shadows</h2>
+      <p class="padding pink z-depth-1 m5">Shadow</p>
+      <p class="padding lime z-depth-2 m5">Shadow</p>
+      <p class="padding blue z-depth-3 m5">Shadow</p>
+      <p class="padding green z-depth-4 m5">Shadow</p>
+      <p class="padding red z-depth-5 m5">Shadow</p>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("textarea#message").characterCounter();
+        $("select").formSelect();
+        $(".datepicker").datepicker();
+        $(".timepicker").timepicker();
+      });
+      $("input.autocomplete").autocomplete({
+        data: {
+          Marina: null,
+          Alina: null,
+          Daryna: null,
+        },
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+</html>

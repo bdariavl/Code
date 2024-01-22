@@ -1,0 +1,97 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  gap: 50px;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+
+.wrapper .square {
+  background: lightcoral;
+}
+
+.square {
+  width: 250px;
+  height: 250px;
+  /* margin: 20px; */
+  font-size: 50px;
+  text-align: center;
+}
+
+.wrapper-2 {
+  width: 100%;
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+}
+.wrapper-2 .square {
+  background: lightblue;
+}
+
+.wrapper-3 {
+  width: 100%;
+  display: flex;
+  gap: 50px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.wrapper-3 .square {
+  background: lightgreen;
+}
+
+.wrapper-4 {
+  width: 100%;
+  display: flex;
+  gap: 50px;
+  flex-direction: row;
+  /* background: gray; */
+
+  justify-content: center;
+  /* flex-start - розташування по горизонталі зліва */
+  /* center - роташування по горизонтали в центрі */
+  /* flex-end - розташування по горизонталі зправа */
+}
+
+.wrapper-4 .square {
+  background: rgb(226, 226, 56);
+}
+
+.wrapper-5 {
+  width: 100%;
+  height: 100vh; /* vh - висота екрану */
+  background: grey;
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* flex-start - розташування по вертикалі зверху */
+  /* center - центрування по вертикалі */
+  /* flex-end - розташування по вертикалі знизу */
+}
+
+.wrapper-5 .square {
+  width: 100px;
+  height: 100px;
+  background: orange;
+}
+
+.wrapper-6 {
+  width: 100%;
+  height: 500px;
+  background: grey;
+  display: flex;
+  gap: 50px;
+  /* залежно від flex-direction, aling-items i fustify-content міняються властивостями */
+  flex-direction: row;
+
+  /* Вертикальне центрування */
+  align-items: center;
+
+  /* Горизонтальне центрування */
+  justify-content: center;
+}
+
+.wrapper-6 .square {
+  background: blueviolet;
+}

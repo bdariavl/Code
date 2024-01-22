@@ -1,0 +1,74 @@
+#first-table {
+  width: 100%;
+  border: 1px solid black;
+}
+
+#first-table tr {
+  width: 100%;
+  background: gray;
+  margin: 10px;
+}
+
+#first-table td {
+  height: 100px;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  margin: 10px;
+}
+
+#first-table .first {
+  background: lightpink;
+  width: 20px;
+}
+
+#first-table th {
+  background: lightpink;
+  font-family: "Courier New", Courier, monospace;
+  color: rgb(67, 24, 61);
+}
+
+.table-wrapper {
+  margin: 100px;
+  display: flex;
+  width: calc(100% - 200px);
+  align-items: center;
+  justify-content: center;
+}
+
+.table-wrapper #second-table {
+  background: lightcyan;
+  width: 80%;
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#second-table th {
+  /* text-align: left; */
+  padding: 20px;
+  text-align: center;
+}
+
+#second-table tr {
+  padding: 20px;
+  text-align: center;
+  border: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+#second-table td {
+  font-weight: bold;
+  padding: 20px;
+}
+
+table, th, td {
+  border: 2px solid black;
+  border-collapse: separate;
+  border-radius: 15px;
+  /* border-spacing: 0px 15px; */
+}
+
+table {
+  background: linear-gradient(45deg, lightpink);
+}
