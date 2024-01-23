@@ -1,108 +1,142 @@
 @use "rules";
 
-main {
-  width: 100%;
+body {
+  background: linear-gradient(
+      330deg,
+      rgba(11, 29, 38, 0) 31.06%,
+      #0b1d26 108.93%
+    ),
+    url(./assets/bg-sky.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-  .hiking-section {
+.hiking-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // margin-top: 200px;
+
+  .hiking-content {
+    width: 90%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    // margin-top: 200px;
+    justify-content: space-between;
 
-    .hiking-content {
-      width: 90%;
+    .follow-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+
+      p {
+        color: #fff;
+        font-family: Manrope;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px;
+        margin-bottom: 24px;
+
+        transform: rotate(90deg);
+      }
+
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    .hiking-guide {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 32px;
+
+      .orange {
+        height: 12px;
+        display: flex;
+        align-items: center;
+        gap: 32px;
+
+        .string {
+          width: 72px;
+          height: 4px;
+          background: #dd8737;
+        }
+
+        span {
+          color: #dd8737;
+          font-family: Manrope;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 32px;
+        }
+      }
+
+      h1 {
+        color: #fff;
+        font-family: Manrope;
+        font-size: 88px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 100px;
+        text-transform: capitalize;
+      }
+    }
+
+    .start-section {
+      width: 77px;
+      height: 240px;
+
       display: flex;
       align-items: center;
       justify-content: space-between;
 
-      .follow-section {
+      .start-content {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 24px;
+        align-items: flex-end;
+        gap: 40px;
 
-        p {
+        span {
           color: #fff;
           font-family: Manrope;
           font-size: 18px;
           font-style: normal;
           font-weight: 700;
           line-height: 32px;
-          margin-bottom: 24px;
-
-          transform: rotate(90deg);
-        }
-
-        img {
-          width: 24px;
-          height: 24px;
-        }
-      }
-
-      .hiking-guide {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        gap: 32px;
-
-        .orange {
-          height: 12px;
-          display: flex;
-          align-items: center;
-          gap: 32px;
-
-          .string {
-            width: 72px;
-            height: 4px;
-            background: #dd8737;
-          }
-
-          span {
-            color: #dd8737;
-            font-family: Manrope;
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 32px;
-          }
-        }
-
-        h1 {
-          color: #fff;
-          font-family: Manrope;
-          font-size: 88px;
-          font-style: normal;
-          font-weight: 600;
-          line-height: 100px;
-          text-transform: capitalize;
-        }
-      }
-
-      .start-section {
-        width: 77px;
-        height: 240px;
-
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        .start-content {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-end;
-          gap: 40px;
-
-          span {
-            color: #fff;
-            font-family: Manrope;
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 32px;
-          }
         }
       }
     }
+  }
+}
+
+.bg-mountain {
+  height: 1422px;
+  background: url(./assets/bg-mountain.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  // position: relative;
+
+  .bg-grass {
+    height: 926px;
+    background: url(./assets/bg-grass.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: translateY(30vh);
+    // position: absolute;
+  }
+
+  .bg-gradient {
+    height: 700px;
+    background: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #9fd5ef 61.38%);
+    position: relative;
+    transform: translateY(-20vh);
+
   }
 }

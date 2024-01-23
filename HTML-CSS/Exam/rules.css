@@ -2,10 +2,6 @@
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(330deg, rgba(11, 29, 38, 0) 31.06%, #0b1d26 108.93%);
-  background: url(./assets/bg-sky.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 body * {
   font-family: "Manrope";
