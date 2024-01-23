@@ -132,3 +132,16 @@ body {
   position: relative;
   transform: translateY(-20vh);
 }
+
+.cards-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 200px;
+  background: #9FD5EF;
+}
+.cards-section .card {
+  width: 80%;
+  display: grid;
+}

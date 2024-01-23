@@ -140,3 +140,19 @@ body {
 
   }
 }
+
+.cards-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 200px;
+  background: #9FD5EF;
+
+
+  .card {
+    width: 80%;
+    display: grid;
+    
+  }
+}

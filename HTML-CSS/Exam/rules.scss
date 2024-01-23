@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
 
+$red: #900000;
+$text: #1e1e1e;
 body {
   margin: 0;
   padding: 0;
-  
+
   * {
     font-family: "Manrope";
   }
@@ -17,4 +19,44 @@ h5,
 h6,
 p {
   margin: 0;
+}
+
+@mixin number() {
+  font-family: Manrope;
+  font-size: 240px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 240px;
+}
+
+@mixin strip() {
+  width: 72px;
+  height: 2px;
+  color: $red;
+}
+
+@mixin textRed() {
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+
+@mixin card-name() {
+  font-family: Manrope;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+@mixin card-text() {
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
 }
