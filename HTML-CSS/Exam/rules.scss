@@ -21,42 +21,68 @@ p {
   margin: 0;
 }
 
-@mixin number() {
-  font-family: Manrope;
-  font-size: 240px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 240px;
+@mixin card-content() {
+  article {
+    margin: 150px 115px 150px 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    align-items: flex-start;
+ 
+   .red {
+      color: $red;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 24px;
+
+      .strip {
+        width: 72px;
+        height: 2px;
+        background: $red;
+      }
+
+      h5 {
+        font-family: Manrope;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 6px;
+        text-transform: uppercase;
+      }
+    }
+
+    h3 {
+      font-family: Manrope;
+      font-size: 64px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      color: $text;
+    }
+    p {
+      font-family: Manrope;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 32px;
+      color: $text;
+    }
+    .read-more {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      color: $red;
+
+      h6 {
+        font-family: Manrope;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px;
+      }
+    }
+  }
 }
 
-@mixin strip() {
-  width: 72px;
-  height: 2px;
-  color: $red;
-}
-
-@mixin textRed() {
-  font-family: Manrope;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 6px;
-  text-transform: uppercase;
-}
-
-@mixin card-name() {
-  font-family: Manrope;
-  font-size: 64px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-}
-
-@mixin card-text() {
-  font-family: Manrope;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 32px;
-}

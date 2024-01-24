@@ -6,9 +6,9 @@ body {
       rgba(11, 29, 38, 0) 31.06%,
       #0b1d26 108.93%
     ),
-    url(./assets/bg-sky.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
+    url(./assets/bg-sky.svg), #9fd5ef;
+ background-repeat: no-repeat no-repeat;
+ background-size: 100vh cover;
 }
 
 .hiking-section {
@@ -121,24 +121,25 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
-  // position: relative;
+  position: relative;
 
   .bg-grass {
     height: 926px;
     background: url(./assets/bg-grass.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    transform: translateY(30vh);
-    // position: absolute;
+    transform: translateY(50vh);
+
+    .bg-gradient {
+      height: 500px;
+      background: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #9fd5ef 61.38%);
+      // z-index: -1;
+      transform: translateY(50vh);
+  
+    }
   }
 
-  .bg-gradient {
-    height: 700px;
-    background: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #9fd5ef 61.38%);
-    position: relative;
-    transform: translateY(-20vh);
 
-  }
 }
 
 .cards-section {
@@ -147,12 +148,36 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 200px;
-  background: #9FD5EF;
-
+  transform: translateY(-30vh);
+  // background: transparent;
 
   .card {
     width: 80%;
-    display: grid;
-    
+    // height: 720px;
+
+    .card-content {
+      display: flex;
+      justify-content: space-between;
+
+      @include rules.card-content;
+
+      h2 {
+        position: absolute;
+
+        font-family: Manrope;
+        font-size: 240px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 240px;
+        opacity: 0.1;
+        margin-top: 38px;
+      }
+      img {
+      }
+    }
+  }
+
+  .card {
+
   }
 }

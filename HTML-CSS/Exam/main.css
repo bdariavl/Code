@@ -18,9 +18,9 @@ p {
 }
 
 body {
-  background: linear-gradient(330deg, rgba(11, 29, 38, 0) 31.06%, #0b1d26 108.93%), url(./assets/bg-sky.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: linear-gradient(330deg, rgba(11, 29, 38, 0) 31.06%, #0b1d26 108.93%), url(./assets/bg-sky.svg), #9fd5ef;
+  background-repeat: no-repeat no-repeat;
+  background-size: 100vh cover;
 }
 
 .hiking-section {
@@ -118,19 +118,19 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
+  position: relative;
 }
 .bg-mountain .bg-grass {
   height: 926px;
   background: url(./assets/bg-grass.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  transform: translateY(30vh);
+  transform: translateY(50vh);
 }
-.bg-mountain .bg-gradient {
-  height: 700px;
+.bg-mountain .bg-grass .bg-gradient {
+  height: 500px;
   background: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #9fd5ef 61.38%);
-  position: relative;
-  transform: translateY(-20vh);
+  transform: translateY(50vh);
 }
 
 .cards-section {
@@ -139,9 +139,79 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 200px;
-  background: #9FD5EF;
+  transform: translateY(-30vh);
 }
 .cards-section .card {
   width: 80%;
-  display: grid;
+}
+.cards-section .card .card-content {
+  display: flex;
+  justify-content: space-between;
+}
+.cards-section .card .card-content article {
+  margin: 150px 115px 150px 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  align-items: flex-start;
+}
+.cards-section .card .card-content article .red {
+  color: #900000;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 24px;
+}
+.cards-section .card .card-content article .red .strip {
+  width: 72px;
+  height: 2px;
+  background: #900000;
+}
+.cards-section .card .card-content article .red h5 {
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+.cards-section .card .card-content article h3 {
+  font-family: Manrope;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: #1e1e1e;
+}
+.cards-section .card .card-content article p {
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  color: #1e1e1e;
+}
+.cards-section .card .card-content article .read-more {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  color: #900000;
+}
+.cards-section .card .card-content article .read-more h6 {
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+}
+.cards-section .card .card-content h2 {
+  position: absolute;
+  font-family: Manrope;
+  font-size: 240px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 240px;
+  opacity: 0.1;
+  margin-top: 38px;
 }
