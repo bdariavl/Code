@@ -17,10 +17,19 @@ p {
   margin: 0;
 }
 
-body {
-  background: linear-gradient(330deg, rgba(11, 29, 38, 0) 31.06%, #0b1d26 108.93%), url(./assets/bg-sky.svg), #9fd5ef;
+.bg {
+  background: linear-gradient(330deg, rgba(11, 29, 38, 0) 80.06%, #0b1d26 108.93%), url(./assets/bg-sky.svg), #9fd5ef;
   background-repeat: no-repeat no-repeat;
   background-size: 100vh cover;
+}
+
+.darken-decoration {
+  background: linear-gradient(330deg, rgba(11, 29, 38, 0) 30.06%, #0b1d26 108.93%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
 }
 
 .hiking-section {
@@ -28,6 +37,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 5;
 }
 .hiking-section .hiking-content {
   width: 90%;
@@ -140,34 +150,40 @@ body {
   align-items: center;
   gap: 200px;
   transform: translateY(-30vh);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #9fd5ef 61.38%);
 }
 .cards-section .card {
+  display: flex;
   width: 80%;
 }
 .cards-section .card .card-content {
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
-.cards-section .card .card-content article {
-  margin: 150px 115px 150px 150px;
+.cards-section .card .card-content .article-wrapper {
+  width: 60%;
+}
+.cards-section .card .card-content .article-wrapper article {
+  margin: 150px;
   display: flex;
   flex-direction: column;
   gap: 27px;
   align-items: flex-start;
 }
-.cards-section .card .card-content article .red {
+.cards-section .card .card-content .article-wrapper article .red {
   color: #900000;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 24px;
 }
-.cards-section .card .card-content article .red .strip {
+.cards-section .card .card-content .article-wrapper article .red .strip {
   width: 72px;
   height: 2px;
   background: #900000;
 }
-.cards-section .card .card-content article .red h5 {
+.cards-section .card .card-content .article-wrapper article .red h5 {
   font-family: Manrope;
   font-size: 18px;
   font-style: normal;
@@ -176,7 +192,7 @@ body {
   letter-spacing: 6px;
   text-transform: uppercase;
 }
-.cards-section .card .card-content article h3 {
+.cards-section .card .card-content .article-wrapper article h3 {
   font-family: Manrope;
   font-size: 64px;
   font-style: normal;
@@ -184,7 +200,7 @@ body {
   line-height: normal;
   color: #1e1e1e;
 }
-.cards-section .card .card-content article p {
+.cards-section .card .card-content .article-wrapper article p {
   font-family: Manrope;
   font-size: 18px;
   font-style: normal;
@@ -192,20 +208,20 @@ body {
   line-height: 32px;
   color: #1e1e1e;
 }
-.cards-section .card .card-content article .read-more {
+.cards-section .card .card-content .article-wrapper article .read-more {
   display: flex;
   gap: 16px;
   align-items: center;
   color: #900000;
 }
-.cards-section .card .card-content article .read-more h6 {
+.cards-section .card .card-content .article-wrapper article .read-more h6 {
   font-family: Manrope;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: 32px;
 }
-.cards-section .card .card-content h2 {
+.cards-section .card .card-content .article-wrapper h2 {
   position: absolute;
   font-family: Manrope;
   font-size: 240px;
