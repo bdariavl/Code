@@ -7,8 +7,8 @@ body {
       #0b1d26 108.93%
     ),
     url(./assets/bg-sky.svg), #9fd5ef;
- background-repeat: no-repeat no-repeat;
- background-size: 100vh cover;
+  background-repeat: no-repeat no-repeat;
+  background-size: 100vh cover;
 }
 
 .hiking-section {
@@ -132,14 +132,15 @@ body {
 
     .bg-gradient {
       height: 500px;
-      background: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #9fd5ef 61.38%);
+      background: linear-gradient(
+        180deg,
+        rgba(11, 29, 38, 0) 0%,
+        #9fd5ef 61.38%
+      );
       // z-index: -1;
       transform: translateY(50vh);
-  
     }
   }
-
-
 }
 
 .cards-section {
@@ -172,12 +173,6 @@ body {
         opacity: 0.1;
         margin-top: 38px;
       }
-      img {
-      }
     }
-  }
-
-  .card {
-
   }
 }
