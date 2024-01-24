@@ -30,9 +30,8 @@ h6 {
 
   .section-content {
     width: 80%;
-    // display: grid;
-    // grid-template-columns: repeat(2, 1fr);
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 
     article {
       display: flex;
@@ -187,6 +186,7 @@ h6 {
     width: 80%;
     display: flex;
     justify-content: space-between;
+    gap: 5vh;
     margin-top: 86px;
     margin-bottom: 115px;
 
@@ -385,10 +385,9 @@ h6 {
   }
 }
 
-
 @media (max-width: rules.$tablet) {
   .hero-section {
-    .section-content{
+    .section-content {
       grid-template-columns: 1fr;
       margin-top: 50px;
 
@@ -416,6 +415,78 @@ h6 {
           height: auto;
           object-fit: none;
         }
+      }
+    }
+  }
+}
+
+@media (max-width: rules.$tablet) {
+  .steps-section {
+    .steps-content {
+      margin-top: 100px;
+      flex-direction: column-reverse;
+      gap: 50px;
+
+      .image-wrapper {
+        width: 100%;
+      }
+
+      .steps {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: rules.$tablet) {
+  .reviews-section {
+    .reviews-content {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 5vh;
+      .review {
+        width: auto;
+      }
+    }
+  }
+}
+
+@media (max-width: rules.$tablet) {
+  .business-section {
+    .business-content {
+      flex-direction: column;
+      gap: 30px;
+
+      .search-section {
+        width: 100%;
+        gap: 50px;
+
+        h2 {
+          text-align: center;
+          font-size: 50px;
+        }
+
+        .input-wrapper {
+          justify-content: center;
+        }
+      }
+
+      img {
+        width: auto;
+      }
+    }
+  }
+}
+
+@media (max-width: rules.$tablet) {
+  .contact-section {
+    .contact-content {
+      flex-direction: column-reverse;
+      gap: 30px;
+
+      h2 {
+        font-size: 50px;
       }
     }
   }

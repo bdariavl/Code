@@ -43,3 +43,13 @@ footer {
     }
   }
 }
+
+@media (max-width: rules.$tablet) {
+  footer {
+    .footer-content {
+      .links-wrapper {
+        width: auto
+      }
+    }
+  }
+}

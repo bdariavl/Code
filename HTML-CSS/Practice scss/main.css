@@ -27,7 +27,8 @@ h6 {
 }
 .hero-section .section-content {
   width: 80%;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 .hero-section .section-content article {
   display: flex;
@@ -171,6 +172,7 @@ h6 {
   width: 80%;
   display: flex;
   justify-content: space-between;
+  gap: 5vh;
   margin-top: 86px;
   margin-bottom: 115px;
 }
@@ -401,7 +403,7 @@ h6 {
   line-height: normal;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
   .hero-section .section-content {
     grid-template-columns: 1fr;
     margin-top: 50px;
@@ -426,5 +428,58 @@ h6 {
     width: auto;
     height: auto;
     object-fit: none;
+  }
+}
+@media (max-width: 1100px) {
+  .steps-section .steps-content {
+    margin-top: 100px;
+    flex-direction: column-reverse;
+    gap: 50px;
+  }
+  .steps-section .steps-content .image-wrapper {
+    width: 100%;
+  }
+  .steps-section .steps-content .steps {
+    width: 100%;
+  }
+}
+@media (max-width: 1100px) {
+  .reviews-section .reviews-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5vh;
+  }
+  .reviews-section .reviews-content .review {
+    width: auto;
+  }
+}
+@media (max-width: 1100px) {
+  .business-section .business-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .business-section .business-content .search-section {
+    width: 100%;
+    gap: 50px;
+  }
+  .business-section .business-content .search-section h2 {
+    text-align: center;
+    font-size: 50px;
+  }
+  .business-section .business-content .search-section .input-wrapper {
+    justify-content: center;
+  }
+  .business-section .business-content img {
+    width: auto;
+  }
+}
+@media (max-width: 1100px) {
+  .contact-section .contact-content {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+  .contact-section .contact-content h2 {
+    font-size: 50px;
   }
 }
