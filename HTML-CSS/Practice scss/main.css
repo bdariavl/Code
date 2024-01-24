@@ -420,6 +420,7 @@ h6 {
   .hero-section .section-content .images-wrapper {
     transform: none;
     margin-top: 50px;
+    justify-content: center;
   }
   .hero-section .section-content .images-wrapper img {
     width: auto;
