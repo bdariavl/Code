@@ -82,3 +82,8 @@ main .bg header .header-content button img {
     margin-bottom: 120px;
   }
 }
+@media (max-width: 500px) {
+  main .bg header .header-content nav {
+    display: none;
+  }
+}

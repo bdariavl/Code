@@ -148,6 +148,14 @@ main {
     display: none;
   }
 }
+@media (max-width: 500px) {
+  .hiking-section .hiking-content .hiking-guide h1 {
+    font-size: 40px;
+  }
+  .hiking-section .hiking-content .hiking-guide h1 .break {
+    display: none;
+  }
+}
 .cards-section {
   padding-top: 300px;
   width: 100%;
@@ -277,5 +285,26 @@ main {
   .cards-section .card .card-content .card-img {
     object-fit: cover;
     height: 50vh;
+  }
+}
+@media (max-width: 500px) {
+  .cards-section .card .card-content {
+    gap: 15px;
+  }
+  .cards-section .card .card-content .article-wrapper h2 {
+    font-size: 100px;
+    margin-top: -100px;
+  }
+  .cards-section .card .card-content .article-wrapper article {
+    margin: 0;
+  }
+  .cards-section .card .card-content .article-wrapper article .red {
+    gap: 10px;
+  }
+  .cards-section .card .card-content .article-wrapper article .red .strip {
+    width: 30px;
+  }
+  .cards-section .card .card-content .article-wrapper article .red h5 {
+    font-size: 15px;
   }
 }

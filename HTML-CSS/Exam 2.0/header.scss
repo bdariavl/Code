@@ -82,3 +82,17 @@ main {
     }
   }
 }
+
+@media (max-width: rules.$phone) {
+  main {
+    .bg {
+      header {
+        .header-content {
+          nav {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
