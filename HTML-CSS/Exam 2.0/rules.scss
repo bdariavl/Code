@@ -2,6 +2,11 @@
 
 $red: #900000;
 $text: #1e1e1e;
+
+// screens
+$tablet: 1200px;
+$phone: 500px;
+
 body {
   margin: 0;
   padding: 0;
@@ -40,6 +45,10 @@ p {
         width: 72px;
         height: 2px;
         background: $red;
+      }
+
+      .strip.invisible {
+        visibility: hidden;
       }
 
       h5 {

@@ -78,6 +78,9 @@ main {
   height: 4px;
   background: #dd8737;
 }
+.hiking-section .hiking-content .hiking-guide .orange .string.second {
+  visibility: hidden;
+}
 .hiking-section .hiking-content .hiking-guide .orange span {
   color: #dd8737;
   font-family: Manrope;
@@ -117,14 +120,43 @@ main {
   line-height: 32px;
 }
 
+@media (max-width: 1200px) {
+  .hiking-section .hiking-content {
+    flex-direction: column-reverse;
+    gap: 20px;
+    align-items: center;
+  }
+  .hiking-section .hiking-content .follow-section {
+    flex-direction: row;
+    align-items: center;
+  }
+  .hiking-section .hiking-content .follow-section p {
+    transform: none;
+    margin: 0;
+  }
+  .hiking-section .hiking-content .hiking-guide {
+    align-items: center;
+  }
+  .hiking-section .hiking-content .hiking-guide h1 {
+    font-size: 60px;
+    text-align: center;
+  }
+  .hiking-section .hiking-content .hiking-guide .orange .string.second {
+    visibility: visible;
+  }
+  .hiking-section .hiking-content .start-section {
+    display: none;
+  }
+}
 .cards-section {
+  padding-top: 300px;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 200px;
   z-index: 10;
-  transform: translateY(-15vh);
+  transform: translateY(-20vh);
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #9fd5ef 5.38%);
 }
 .cards-section .card {
@@ -157,6 +189,9 @@ main {
   width: 72px;
   height: 2px;
   background: #900000;
+}
+.cards-section .card .card-content .article-wrapper article .red .strip.invisible {
+  visibility: hidden;
 }
 .cards-section .card .card-content .article-wrapper article .red h5 {
   font-family: Manrope;
@@ -205,4 +240,42 @@ main {
   line-height: 240px;
   opacity: 0.1;
   margin-top: 38px;
+}
+
+@media (max-width: 1200px) {
+  .cards-section {
+    padding-top: 100px;
+    transform: translateY(-40vh);
+  }
+  .cards-section .card .card-content.second-card {
+    flex-direction: column-reverse;
+  }
+  .cards-section .card .card-content {
+    flex-direction: column;
+  }
+  .cards-section .card .card-content .article-wrapper {
+    width: 100%;
+  }
+  .cards-section .card .card-content .article-wrapper h2 {
+    font-size: 150px;
+    margin-top: -50px;
+  }
+  .cards-section .card .card-content .article-wrapper article {
+    margin: 50px;
+    align-items: center;
+  }
+  .cards-section .card .card-content .article-wrapper article .red .strip.invisible {
+    visibility: visible;
+  }
+  .cards-section .card .card-content .article-wrapper article h3 {
+    font-size: 55px;
+    text-align: center;
+  }
+  .cards-section .card .card-content .article-wrapper article p {
+    text-align: center;
+  }
+  .cards-section .card .card-content .card-img {
+    object-fit: cover;
+    height: 50vh;
+  }
 }

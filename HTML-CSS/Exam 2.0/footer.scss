@@ -89,3 +89,45 @@ footer {
     }
   }
 }
+
+@media (max-width: rules.$tablet) {
+  footer {
+    .footer-content {
+      .left-wrapper {
+        width: 50%;
+
+        h4 {
+          font-size: 30px;
+        }
+
+        h6 {
+          font-size: 16px;
+        }
+
+        span {
+          font-size: 14px;
+        }
+      }
+
+      .footer-links {
+        width: 50%;
+
+        .wrapper {
+          gap: 20px;
+
+          h4 {
+            font-size: 20px;
+          }
+
+          .links-wrapper {
+            gap: 10px;
+
+            a {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

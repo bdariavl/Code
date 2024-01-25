@@ -1,4 +1,23 @@
-header {
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+}
+body * {
+  font-family: "Manrope";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+main .bg header {
   width: 100%;
   height: 25px;
   margin: 0;
@@ -8,14 +27,14 @@ header {
   justify-content: center;
   margin-bottom: 200px;
 }
-header .header-content {
+main .bg header .header-content {
   margin-top: 65px;
   width: 90%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-header .header-content h4 {
+main .bg header .header-content h4 {
   color: #fff;
   font-family: Manrope;
   font-size: 32px;
@@ -25,12 +44,12 @@ header .header-content h4 {
   letter-spacing: 4px;
   text-transform: capitalize;
 }
-header .header-content nav {
+main .bg header .header-content nav {
   display: flex;
   align-items: center;
   gap: 38px;
 }
-header .header-content nav a {
+main .bg header .header-content nav a {
   color: #fff;
   font-family: Manrope;
   font-size: 18px;
@@ -39,7 +58,7 @@ header .header-content nav a {
   line-height: 32px;
   text-decoration: none;
 }
-header .header-content button {
+main .bg header .header-content button {
   border: none;
   background: transparent;
   display: flex;
@@ -53,7 +72,13 @@ header .header-content button {
   line-height: 32px;
   cursor: pointer;
 }
-header .header-content button img {
+main .bg header .header-content button img {
   width: 24px;
   height: 24px;
+}
+
+@media (max-width: 1200px) {
+  main .bg header {
+    margin-bottom: 120px;
+  }
 }
