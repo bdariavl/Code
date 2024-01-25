@@ -1,0 +1,158 @@
+@use "rules";
+
+.bg {
+  background: url("./assets/bg-hero.svg");
+  background-size: cover;
+  height: 130vh;
+}
+
+main {
+  background: #9fd5ef;
+}
+
+.hiking-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+
+  .hiking-content {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .follow-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+
+      p {
+        color: #fff;
+        font-family: Manrope;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px;
+        margin-bottom: 24px;
+
+        transform: rotate(90deg);
+      }
+
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    .hiking-guide {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 32px;
+
+      .orange {
+        height: 12px;
+        display: flex;
+        align-items: center;
+        gap: 32px;
+
+        .string {
+          width: 72px;
+          height: 4px;
+          background: #dd8737;
+        }
+
+        span {
+          color: #dd8737;
+          font-family: Manrope;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 32px;
+        }
+      }
+
+      h1 {
+        color: #fff;
+        font-family: Manrope;
+        font-size: 88px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 100px;
+        text-transform: capitalize;
+      }
+    }
+
+    .start-section {
+      width: 77px;
+      height: 240px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .start-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 40px;
+
+        span {
+          color: #fff;
+          font-family: Manrope;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 32px;
+        }
+      }
+    }
+  }
+}
+
+.cards-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 200px;
+  z-index: 10;
+  transform: translateY(-15vh);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #9fd5ef 5.38%);
+
+  .card {
+    display: flex;
+    width: 80%;
+
+    .card-content {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      .article-wrapper {
+        width: 60%;
+        @include rules.card-content;
+
+        h2 {
+          position: absolute;
+
+          font-family: Manrope;
+          font-size: 240px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 240px;
+          opacity: 0.1;
+          margin-top: 38px;
+        }
+      }
+
+      img {
+        // width: 30%;
+      }
+    }
+  }
+}
