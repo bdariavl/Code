@@ -141,6 +141,9 @@ main {
     font-size: 60px;
     text-align: center;
   }
+  .hiking-section .hiking-content .hiking-guide .orange span {
+    text-align: center;
+  }
   .hiking-section .hiking-content .hiking-guide .orange .string.second {
     visibility: visible;
   }
@@ -272,6 +275,9 @@ main {
     margin: 50px;
     align-items: center;
   }
+  .cards-section .card .card-content .article-wrapper article .red h5 {
+    text-align: center;
+  }
   .cards-section .card .card-content .article-wrapper article .red .strip.invisible {
     visibility: visible;
   }
@@ -288,8 +294,11 @@ main {
   }
 }
 @media (max-width: 500px) {
+  .cards-section {
+    gap: 100px;
+  }
   .cards-section .card .card-content {
-    gap: 15px;
+    gap: 25px;
   }
   .cards-section .card .card-content .article-wrapper h2 {
     font-size: 100px;
@@ -298,13 +307,20 @@ main {
   .cards-section .card .card-content .article-wrapper article {
     margin: 0;
   }
-  .cards-section .card .card-content .article-wrapper article .red {
-    gap: 10px;
-  }
   .cards-section .card .card-content .article-wrapper article .red .strip {
     width: 30px;
   }
   .cards-section .card .card-content .article-wrapper article .red h5 {
     font-size: 15px;
+    text-align: center;
+  }
+  .cards-section .card .card-content .article-wrapper article h3 {
+    font-size: 45px;
+  }
+  .cards-section .card .card-content .article-wrapper article h3 .break {
+    display: none;
+  }
+  .cards-section .card .card-content .article-wrapper article p {
+    font-size: 16px;
   }
 }
