@@ -18,5 +18,81 @@ p {
 }
 
 footer {
+  width: 100%;
+  background: #9fd5ef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .footer-content {
   width: 80%;
+  display: flex;
+  margin-bottom: 100px;
+}
+footer .footer-content .left-wrapper {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer .footer-content .left-wrapper h4 {
+  color: #1e1e1e;
+  font-family: Manrope;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 4px;
+  text-transform: capitalize;
+}
+footer .footer-content .left-wrapper h6 {
+  width: 303px;
+  color: #1e1e1e;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  margin-bottom: 10vh;
+}
+footer .footer-content .left-wrapper span {
+  color: #1e1e1e;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  opacity: 0.5;
+}
+footer .footer-content .footer-links {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-content .footer-links .wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+footer .footer-content .footer-links .wrapper h4 {
+  color: #900000;
+  font-family: Manrope;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+footer .footer-content .footer-links .wrapper .links-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer .footer-content .footer-links .wrapper .links-wrapper a {
+  color: #1e1e1e;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  text-decoration: none;
 }

@@ -1,6 +1,91 @@
 @use "rules";
 
 footer {
+  width: 100%;
+  background: #9fd5ef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .footer-content {
     width: 80%;
-    
+    display: flex;
+    margin-bottom: 100px;
+
+    .left-wrapper {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      h4 {
+        color: rules.$text;
+        font-family: Manrope;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 4px;
+        text-transform: capitalize;
+      }
+
+      h6 {
+        width: 303px;
+        color: rules.$text;
+        font-family: Manrope;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px;
+        margin-bottom: 10vh;
+      }
+
+      span {
+        color: rules.$text;
+        font-family: Manrope;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px;
+        opacity: 0.5;
+      }
+    }
+
+    .footer-links {
+      width: 40%;
+      display: flex;
+      justify-content: space-between;
+
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        h4 {
+          color: rules.$red;
+          font-family: Manrope;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+        }
+
+        .links-wrapper {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+
+          a {
+            color: rules.$text;
+            font-family: Manrope;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 32px;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
 }
