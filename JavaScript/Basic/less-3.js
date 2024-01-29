@@ -5,13 +5,27 @@ console.log(str2);
 
 // str[0]; I
 
+// immutable
+const I = str.slice(0, 1);
+const am = str.slice(2, 4);
+const a = str.slice(5, 6);
+const string = str.slice(7);
+
+console.log(I, am, a, string, "slice");
+console.log(str);
+
+const lastStrSymbol = str[str.length - 1];
+
+console.log(lastStrSymbol.toUpperCase());
+
 const strFragment = str.slice(0, 3);
 console.log(strFragment, "slice");
 console.log(str);
 
+// Завдання:
 const str3 = "Daryna";
 
-const a = str3.slice(1, 2);
+const a1 = str3.slice(1, 2);
 const y = str3.slice(3, 4);
 const a2 = str3.slice(5, 6);
 console.log(a, y, a2);
