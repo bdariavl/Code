@@ -169,6 +169,16 @@ console.log(typeof 4);
 console.log(typeof true);
 
 console.log(typeof undefined);
+console.log(typeof { a: 10 });
+console.log(typeof [1, 2, 3, 4]);
+console.log(typeof function () {});
+console.log(typeof null);
+
+let data = "1000";
+
+if (typeof data ==="string") {
+  data = Number(data);
+}
 
 console.groupEnd();
 
