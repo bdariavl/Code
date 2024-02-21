@@ -7,11 +7,12 @@ while (numbers.length !== 10) {
 
 console.log(numbers, numbers.length);
 
+
 let shouldGoOn = true;
 let n = -10;
 
 while (shouldGoOn) {
-  console.log(n);
+  console.log(n, "iteration");
   n = n + 1;
 
   if (n === 0) {
@@ -20,6 +21,7 @@ while (shouldGoOn) {
 }
 
 console.log(`${n} result`);
+
 
 let n1 = 10;
 
@@ -36,6 +38,13 @@ console.log(`${n1} - result(n1)`);
 
 // Завдання:
 
+// *
+// **
+// ***
+// ***
+// **
+// *
+
 function draw(symbol, iterations) {
   let str = "";
   while (str.length !== iterations) {
@@ -50,9 +59,19 @@ function draw(symbol, iterations) {
   }
 }
 
-
 draw("*", 3);
 draw("/", 5);
 
 // for
 
+const str = "zjdhsbddkfjn";
+
+for (let i = 0; i < str.length; i = i + 1) {
+  console.log(str[i], i, "iteration (for)");
+}
+
+console.log("____________________")
+
+for (let i = 0; i < str.length; i = i + 2) {
+  console.log(str[i], "by two iteration")
+}
