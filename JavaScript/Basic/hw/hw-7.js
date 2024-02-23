@@ -4,8 +4,8 @@ function findCharactersQuantity(str, char) {
   // функція має рахувати кількість символів char у строці str
   let counter = 0;
 
-  for (const char of str) {
-    if (char === "a") {
+  for (const findChar of str) {
+    if (findChar === char) {
       counter = counter + 1;
     }
   }
