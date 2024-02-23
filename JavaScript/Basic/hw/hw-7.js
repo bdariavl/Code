@@ -34,8 +34,8 @@ function encryption(str) {
       case "c":
         result = result + "!";
         break;
-        default:
-            result = result + char;
+      default:
+        result = result + char;
     }
   }
 
