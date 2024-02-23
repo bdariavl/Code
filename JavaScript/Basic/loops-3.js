@@ -120,7 +120,9 @@ function returnNumb(numbers, lookingFor) {
     for (const char1 of numbers) {
         for (const char2 of numbers) {
             if (Number(char1) + Number(char2) === lookingFor) {
-                console.log("Match", char1, char2)
+                // console.log("Match", char1, char2);
+                result = `${char1}, ${char2}`;
+                return result;
             }
         }
     }
