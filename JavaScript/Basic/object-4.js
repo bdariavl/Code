@@ -111,6 +111,41 @@ const user = {
 console.log(user.isAdmain);
 console.log(adminUser.isAdmain);
 
-if (user.id) {
+if (user.hasOwnProperty("id")) {
+  //має свое значення або ні
   console.log(user.id, "USER ID");
 }
+
+if ("id" in user) {
+  console.log(user.id, "USER ID");
+}
+
+typeof user === "object";
+
+function hasOwnProperty(object, keyToLookFor) {
+  let keys = ``;
+
+  for (const key in object) {
+    keys = keys + `${key}|`;
+  }
+
+  // console.log(keys, "keys");
+
+  return keys.includes(keyToLookFor);
+}
+
+console.log(hasOwnProperty({ a: 10 }, "a"));
+
+// Destruction of objects
+
+const dataFromServer = {
+  a: 10,
+  b: 10,
+  c: 10,
+};
+
+// деструктурізація - зворотнє присвоєння
+
+const { a, b, c } = dataFromServer;
+
+console.log(a, b, c);
