@@ -155,12 +155,27 @@ const cities = [
 // 1. rating
 // 2. population
 // 3. name - алфавітно
+
 const sortedCities = cities.sort((city1, city2) => {
   const rating = city2.rating - city1.rating;
-  const population = city1.population - city2.population;
+  const population = city2.population - city1.population;
   const name = city1.name.localeCompare(city2.name);
 
   return rating || population || name;
 });
 
 console.log(sortedCities);
+
+// splice
+
+const elements = ["first", "second", "fourth"];
+
+// splice(startIndex, quantityOfElementsToDelete,  items...)
+elements.splice(2, 0, "third");
+
+console.log(elements, "elements");
+
+const deletedElements = elements.splice(0, 4, "1", "2", "3", "4");
+console.log(deletedElements, "deleteElements");
+
+console.log(elements, "elements");
