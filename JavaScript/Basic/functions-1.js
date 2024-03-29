@@ -160,12 +160,22 @@ obj.showC();
 // obj.show("c"); - 30
 
 const obj2 = {
-    a: 10,
+  a: 10,
   b: 20,
   c: 30,
   show: function (key) {
-    console.log(this[key])
-  }
-}
+    console.log(this[key]);
+  },
+};
 
 obj2.show("a");
+
+// Instances
+
+function OurFirstConstructor() {
+  this.a = 10;
+}
+
+const instance = new OurFirstConstructor();
+
+console.log(instance, "instance");
