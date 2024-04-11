@@ -25,4 +25,4 @@ person1.learn("HTML");
 console.log(person1);
 
 person1.forget("JavaScript");
-console.log(person1)
+console.log(person1);
